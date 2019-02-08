@@ -1,0 +1,24 @@
+package com.lambdaschool;
+
+public class Main
+{
+
+    public static void main(String[] args)
+    {
+        // Create Collection
+        PiggyBank piggy = new PiggyBank();
+
+        System.out.println("********");
+        System.out.println(piggy.storage[0].getName());
+        System.out.println("********");
+
+        piggy.addMoney("Quarter");
+        piggy.addMoney("Dime");
+        piggy.addMoney("Dollar", 5);
+        piggy.addMoney("Nickel", 3);
+        piggy.addMoney("Dime", 7);
+        piggy.addMoney("Dollar");
+        piggy.addMoney("Penny", 10);
+        piggy.totalStored();
+    }
+}
