@@ -2,14 +2,14 @@ package com.lambdaschool;
 
 public class Dollar extends Money2
 {
-    static int worth = 1;
+    int worth = 1;
     double totalValue;
 
     // Constructor taking int
     public Dollar(int numOfMoney)
     {
         super(numOfMoney);
-        this.totalValue = totalValue;
+        this.totalValue = this.numOfMoney * this.worth;
         System.out.println("$" + numOfMoney);
     }
 
@@ -23,12 +23,12 @@ public class Dollar extends Money2
     @Override
     public int getNumOfMoney()
     {
-        return super.getNumOfMoney();
+        return numOfMoney;
     }
 
     @Override
     public double getTotalValue()
     {
-        return super.getTotalValue();
+        return totalValue;
     }
 }

@@ -2,7 +2,7 @@ package com.lambdaschool;
 
 public class Dime extends Money2
 {
-    static double worth = .10;
+    double worth = .10;
     double totalValue;
 
     // Constructor taking int
@@ -24,12 +24,12 @@ public class Dime extends Money2
     @Override
     public int getNumOfMoney()
     {
-        return super.getNumOfMoney();
+        return numOfMoney;
     }
 
     @Override
     public double getTotalValue()
     {
-        return super.getTotalValue();
+        return totalValue;
     }
 }

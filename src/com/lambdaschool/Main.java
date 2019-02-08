@@ -17,6 +17,7 @@ public class Main
         piggy.add(new Dollar());
         piggy.add(new Penny(10));
 
+        System.out.println("********");
         double acc = 0;
         for (int i = 0; i < piggy.size(); i++)
         {
